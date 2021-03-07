@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>HTML</title>
+  </head>
+  <body>
+    <h1>HTML</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="html.html">HTML</a>
+      </nav>
+    <p>HTML pages are text documents. HTMl uses tags to give the text in them extra meaning. Tags are referred to as elements. Tags usually come in pairs, an opening and closing tag. This isn't always the case, some tags are self closing.
+        Opening tags can have attributes that provide futher information on the content of the element.
+        Attributes require a name and a value.
+      </p>
+      <hr />
+      <h2>Text</h2>
+      <h3>Headings & Paragraphs.</h3>
+      <p>
+        Use the "h" tag for headings with 1-6 being size in descending order.
+        Paragraphs are created with "p".
+      </p>
+      <h3>Bold, Italics & Emphasis.</h3>
+      <p>
+        Here i have used <b>bold</b> ("b") and <i>italic</i> ("i") tags. Not to be
+        confused with strong and emphasis.
+      </p>
+      <p>
+        With the <sup>"sup" tag</sup> i can write superscript. With the
+        <sub>"sub" tag</sub>i can display subscript.<br />Using the br tag i can
+        create a line break.<br />Lastly i can add a horizontal rule using hr to
+        create a break between themes. I've added some throught the page.
+      </p>
+      <h3>Semantic Markup.</h3>
+      <p>
+        The following elements are not intended to affect the structure of a page
+        but do add extra information.
+      </p>
+      <h3>Strong & Emphasis.</h3>
+      <p>
+        <strong>"Strong"</strong> indicates that content has strong importance. By
+        default the browser will display it in <strong>bold</strong>.
+      </p>
+      <p>
+        <em>Emphasis</em> ("em") idicates ephasis that subtley changes the meaning
+        of a statement. By default browsers will display this in italics.
+      </p>
+      <h3>Quotations.</h3>
+      <blockquote>
+        <p>
+          "Blockquote" is used to quotate an entire paragraph. P tags are still
+          used inside. Browsers usually indent the blockquote, if you want to
+          indent only use CSS.
+        </p>
+      </blockquote>
+      <p>
+        The "q" element is used to <q>quote</q> shorter text within a paragraph.
+        Intenet explorer does not apply this element though so many people tend to
+        avoid this element.
+      </p>
+      <h3>Abbreviations & Acronyms.</h3>
+      <p>
+        "Abbr" is an element used for abbreviations. Use a title attribute to
+        specify the full term. E.g. <abbr title="Laugh out loud">LOL</abbr>
+      </p>
+      <h3>Citations & Definitions.</h3>
+      <p>
+        To cite a <cite>source</cite> use the "cite" tag. This will render in
+        italics.<br />The furst time you define a new termminology you can use a
+        dfn element. Some browsers display this in italics but non Safari or
+        Chrome.
+      </p>
+      <h3>Author Definitions</h3>
+      <p>
+        Address "adr" is used to define contact details. It is not limited to a
+        physical adress. May be displayed by the browsr in italics.<br />hcards
+        are a micro format used to make information machine readable. There is an
+        example below, there are more fields available which can be viewed
+        <a href="http://microformats.org/wiki/hcard-cheatsheet> here</a>.
+      </p>
+      <div id="hcard-Daniel-Ward" class="vcard">
+        <span class="fn">Daniel Ward</span>
+        <div class="org">Organisation Name</div>
+        <a class="email" href="mailto:d-ward@live.co.uk">d-ward@live.co.uk</a>
+        <div class="adr">
+          <div class="street-address">461 Nottingham Road</div>
+          <span class="locality">Nottingham</span>
+          <span class="region">Nottinghamshire</span>
+          <span class="postal-code">NG162GF</span>
+          <span class="country-name">UK</span>
+        </div>
+      </div>
+      <p>
+        When making changes to content we can use "ins" to show content that has
+        been <ins>inserted</ins> into document. The "del" element can show thext
+        that has been deleted.<del>this was removed.</del> "S" is used to
+        <s>strike through</s> content that is no longer relevant but is not
+        deleted.
+      </p>
+      <h4>Summary</h4>
+      <p>HTML elements are used to define the structure of a page. They can also provide semantic info such as ephasis or definitons.</p>
+      <hr />
+      <h2>Lists</h2>
+      <h3>Ordered Lists</h3>
+      <ol>
+        <li>Ordered lists are created with th "ol" tag.</li>
+        <li>Each entry on the list is added with "li" tags.</li>
+        <li>Browsers will indent lists by default.</li>
+        <li>
+          You can use a type atrribute to select the type like numbers, letters or
+          roman numerals.
+        </li>
+        <li>It is best practice to use the CSS lists-style-type property.</li>
+      </ol>
+      <h3>Unordered Lists</h3>
+      <ul>
+        <li>Unordered lists are created with the "ul" tag.</li>
+        <li>
+          Again you can use a type attribute but it is best practice to use CSS.
+        </li>
+      </ul>
+      <h3>Definition Lists</h3>
+      <dl>
+        <dt>Definition lists</dt>
+        <dd>Used to create a lists of terms and their definitons.</dd>
+        <dt>"dt"</dt>
+        <dd>Used to add a definiton term.</dd>
+        <dt>"dd"</dt>
+        <dd>Used to contain the definiton.</dd>
+      </dl>
+      <h3>Nested Lists.</h3>
+      <ul>
+        <li>You can nest a list inside a parent list.</li>
+        <ul>
+          <li>Like so.</li>
+        </ul>
+      </ul>
+      <h4>Summary</h4>
+      <ul>
+        <li>There are three HTML list types:</li>
+        <ul>
+          <li>Orderd</li>
+          <li>Unordered</li>
+          <li>Definition</li>
+        </ul>
+        <li>Oredered use numbers</li>
+        <li>Unordered use bullet points.</li>
+        <li>Definition lists a series of terms and their definitions.</li>
+        <li>Lists can be nested inside one another.</li>
+      </ul>
+      <hr />
+      <h2>Links</h2>
+      <p>The "a" element is used to create <a href="#">links</a>. The page is specified with the href attribute. By default browsers display links blue and underlined.</p>
+  </body>
+</html>
